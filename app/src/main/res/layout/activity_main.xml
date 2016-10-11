@@ -29,16 +29,51 @@
         android:id="@+id/red"
         android:labelFor="@+id/redSB"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/redSB" />
+        android:layout_below="@id/colorSwatch"
+        android:layout_alignEnd="@+id/blue" />
 
     <SeekBar
-        android:layout_width="fill_parent"
-        android:layout_height="30dp"
-        android:id="@+id/redSB"
-        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/green"
         android:layout_alignParentStart="true"
-        android:max="255"
-        android:layout_marginBottom="15dp" />
+        android:id="@+id/greenSB"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/blue"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:layout_below="@+id/greenSB"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blue"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/blueSB"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blueSB"
+        android:id="@+id/alpha"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alpha"
+        android:layout_alignStart="@+id/alpha"
+        android:id="@+id/alphaSB"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -50,11 +85,21 @@
         android:layout_below="@+id/redSB"
         android:layout_alignParentStart="true" />
 
-    <!--TODO: SeekBar for blue -->
+    <!--<SeekBar-->
+        <!--android:id="@+id/seekBar3"-->
+        <!--android:max="255"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentStart="true" />-->
 
-    <!--TODO: TextView for blue -->
-    <!--TODO: SeekBar for blue -->
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:id="@+id/redSB"
+        android:max="255"
+        android:layout_below="@+id/red"
+        android:layout_alignParentStart="true" />
 
-    <!--TODO: TextView for alpha -->
-    <!--TODO: SeekBar for alpha -->
+
 </RelativeLayout>

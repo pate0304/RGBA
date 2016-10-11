@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--Author: Jay Patel (pate0304)-->
+    <!--RGB-A (MVC) is based on MVC. MVC can be thought of as both an object-oriented design pattern, as well as an architecture.-->
 
     <!--  About, appears as action button -->
     <item
